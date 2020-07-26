@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  flex-direction: column;
+}
+.music-container {
+  border: 2px solid #f4f0c9;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.musicCover {
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+
+  text-align: center;
+}
+.musicCover img {
+  border-radius: 20px;
+}
+.musicicons {
+  text-align: center;
+  margin: 30px;
+}
+#bg {
+  background: url("images/summer.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#seek-bar {
+  height: 5px;
+  background-color: gray;
+  display: flex;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+#fill {
+  height: 5px;
+  background-color: royalblue;
+  border-radius: 20px;
+}
+#handle {
+  width: 8px;
+  height: 8px;
+  background-color: royalblue;
+  border-radius: 50%;
+  margin-left: -5px;
+  transform: scale(2);
+}
+#songTitle {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 18px;
+}
